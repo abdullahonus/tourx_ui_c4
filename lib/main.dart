@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Average Calculator',
+      title: 'Countrol4',
       theme: ThemeData(
           primarySwatch: Colors.purple,
           visualDensity: VisualDensity.adaptivePlatformDensity),
@@ -122,6 +122,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                   child: Text(
                     "Plan your Vacation \nWith Us",
                     style: TextStyle(
+                        fontFamily: "mont",
                         fontSize: 30,
                         color: Colors.white,
                         fontWeight: FontWeight.w500),
@@ -170,14 +171,15 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                         fontWeight: FontWeight.bold),
                   )),
               const Positioned(
-                  left: 20,
+                  left: 15,
                   bottom: 120,
                   child: Text(
                     "Finish your transactions \nover the phone.",
                     style: TextStyle(
                         fontSize: 30,
                         color: Colors.white,
-                        fontWeight: FontWeight.w500),
+                        fontWeight: FontWeight.w500,
+                        fontFamily: "mont"),
                   )),
             ])),
         PageViewModel(
@@ -230,7 +232,8 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                     style: TextStyle(
                         fontSize: 30,
                         color: Colors.white,
-                        fontWeight: FontWeight.w500),
+                        fontWeight: FontWeight.w500,
+                        fontFamily: "mont"),
                   )),
             ]))
       ],
@@ -243,7 +246,8 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         width: 50,
         height: 50,
         decoration: BoxDecoration(
-            color: Color(0xffFD4416), borderRadius: BorderRadius.circular(30)),
+            color: const Color(0xffFD4416),
+            borderRadius: BorderRadius.circular(30)),
         child: const Icon(
           Icons.arrow_forward,
           color: Colors.white,
