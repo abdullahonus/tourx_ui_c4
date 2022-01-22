@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tourx_ui_c4/drawer/settings.dart';
 import 'package:tourx_ui_c4/tabs/home_bar.dart';
 
 class HomePage extends StatefulWidget {
@@ -128,7 +129,9 @@ class _HomePageState extends State<HomePage> {
                           margin: const EdgeInsets.fromLTRB(24, 10, 0, 0),
                           child: TextButton.icon(
                             onPressed: () {
-                              // Respond to button press
+                              Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => const SettingsPage(),
+                              ));
                             },
                             icon: const Icon(
                               Icons.settings,

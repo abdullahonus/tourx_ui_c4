@@ -67,6 +67,13 @@ flutter:
      - 3.png
      - 4.png
      - 5.png
+     - assets/capadoccia/c1.jpg
+     - assets/capadoccia/c2.jpg
+     - assets/capadoccia/c3.jpg
+     - assets/capadoccia/c4.jpg
+     - assets/capadoccia/c5.jpg
+     - assets/capadoccia/c6.jpg
+     - assets/capadoccia/c7.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
