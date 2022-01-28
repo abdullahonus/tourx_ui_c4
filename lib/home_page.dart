@@ -14,10 +14,10 @@ class _HomePageState extends State<HomePage> {
   static final List<Widget> _widgetOptions = <Widget>[
     const IndexOne(),
     const Text(
-      'Index 1: Business',
+      'Index 1: Search',
     ),
     const Text(
-      'Index 2: School',
+      'Index 2: Profle',
     ),
   ];
 
@@ -168,7 +168,7 @@ class _HomePageState extends State<HomePage> {
                     width: 17,
                     height: 2,
                     color: const Color(0xffFD4416),
-                  )
+                  ),
                 ],
               ),
               backgroundColor: Colors.white,
@@ -178,6 +178,19 @@ class _HomePageState extends State<HomePage> {
                 "TUORX",
                 style: TextStyle(color: Color(0xffFD4416), fontFamily: "mont"),
               ),
+              actions: [
+                Container(
+                  margin: const EdgeInsets.only(right: 15, top: 15),
+                  width: 40,
+                  decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(100)),
+                      image: DecorationImage(
+                          image: NetworkImage(
+                            "https://www.leisureopportunities.co.uk/images/105265_616653.jpg",
+                          ),
+                          fit: BoxFit.cover)),
+                )
+              ],
             ),
             body: Center(
               child: _widgetOptions.elementAt(_selectedIndex),

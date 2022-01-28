@@ -86,6 +86,105 @@ class _IndexOneState extends State<IndexOne> {
                     decoration: const BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(35)),
                         image: DecorationImage(
+                            image: NetworkImage(
+                                "https://tatilsepeti.cubecdn.net/Files/TurResim/10881/tsr10881637692214157863464.jpg"),
+                            fit: BoxFit.cover)),
+                    child: Container(
+                      margin: const EdgeInsets.fromLTRB(15, 290, 15, 8),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(30),
+                          color: Colors.white10),
+                      width: 150,
+                      height: 50,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(35),
+                        child: BackdropFilter(
+                            filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
+                            child: OpenContainer(
+                              transitionType: _containerTransitionType,
+                              transitionDuration: const Duration(seconds: 2),
+                              openBuilder: (context, _) =>
+                                  const CappadociaPage(),
+                              closedElevation: 0,
+                              closedShape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(35),
+                                  side: const BorderSide(
+                                    color: Colors.transparent,
+                                  )),
+                              closedColor: Colors.white.withOpacity(0.1),
+                              closedBuilder: (context, _) => Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Container(
+                                    margin:
+                                        const EdgeInsets.fromLTRB(25, 15, 0, 0),
+                                    width: 60,
+                                    height: 20,
+                                    decoration: const BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(30))),
+                                    child: const Text(
+                                      "Swiss",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: "mont",
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                        color: Color(0xffFD4416),
+                                      ),
+                                    ),
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      const Padding(
+                                        padding: EdgeInsets.only(left: 15.0),
+                                        child: Text("Switzerland",
+                                            style: TextStyle(
+                                                fontSize: 30,
+                                                fontFamily: "mont",
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.bold)),
+                                      ),
+                                      Container(
+                                        margin:
+                                            const EdgeInsets.only(right: 15.0),
+                                        decoration: const BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(80))),
+                                        child: IconButton(
+                                            onPressed: () {},
+                                            icon: const Icon(
+                                                Icons.shopping_cart_rounded)),
+                                      ),
+                                    ],
+                                  ),
+                                  const Padding(
+                                    padding: EdgeInsets.only(left: 20.0),
+                                    child: Text("\$94.00",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontFamily: "mont",
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.bold)),
+                                  ),
+                                ],
+                              ),
+                            )),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.fromLTRB(0, 35, 0, 0),
+                    width: 400,
+                    decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(35)),
+                        image: DecorationImage(
                             image: AssetImage("assets/capadoccia/c1.jpg"),
                             fit: BoxFit.cover)),
                     child: Container(
@@ -161,6 +260,204 @@ class _IndexOneState extends State<IndexOne> {
                                   const Padding(
                                     padding: EdgeInsets.only(left: 20.0),
                                     child: Text("\$50.00",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontFamily: "mont",
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.bold)),
+                                  ),
+                                ],
+                              ),
+                            )),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.fromLTRB(0, 35, 0, 0),
+                    width: 400,
+                    decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(35)),
+                        image: DecorationImage(
+                            image: NetworkImage(
+                                "https://upload.travelawaits.com/ta/uploads/2021/04/eiffel-tower.jpg"),
+                            fit: BoxFit.cover)),
+                    child: Container(
+                      margin: const EdgeInsets.fromLTRB(15, 290, 15, 8),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(30),
+                          color: Colors.white10),
+                      width: 150,
+                      height: 50,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(35),
+                        child: BackdropFilter(
+                            filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
+                            child: OpenContainer(
+                              transitionType: _containerTransitionType,
+                              transitionDuration: const Duration(seconds: 2),
+                              openBuilder: (context, _) =>
+                                  const CappadociaPage(),
+                              closedElevation: 0,
+                              closedShape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(35),
+                                  side: const BorderSide(
+                                    color: Colors.transparent,
+                                  )),
+                              closedColor: Colors.white.withOpacity(0.1),
+                              closedBuilder: (context, _) => Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Container(
+                                    margin:
+                                        const EdgeInsets.fromLTRB(25, 15, 0, 0),
+                                    width: 60,
+                                    height: 20,
+                                    decoration: const BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(30))),
+                                    child: const Text(
+                                      "France",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: "mont",
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                        color: Color(0xffFD4416),
+                                      ),
+                                    ),
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      const Padding(
+                                        padding: EdgeInsets.only(left: 15.0),
+                                        child: Text("Paris",
+                                            style: TextStyle(
+                                                fontSize: 30,
+                                                fontFamily: "mont",
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.bold)),
+                                      ),
+                                      Container(
+                                        margin:
+                                            const EdgeInsets.only(right: 15.0),
+                                        decoration: const BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(80))),
+                                        child: IconButton(
+                                            onPressed: () {},
+                                            icon: const Icon(
+                                                Icons.shopping_cart_rounded)),
+                                      ),
+                                    ],
+                                  ),
+                                  const Padding(
+                                    padding: EdgeInsets.only(left: 20.0),
+                                    child: Text("\$89.00",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontFamily: "mont",
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.bold)),
+                                  ),
+                                ],
+                              ),
+                            )),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.fromLTRB(0, 35, 0, 0),
+                    width: 400,
+                    decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(35)),
+                        image: DecorationImage(
+                            image: NetworkImage(
+                                "https://www.bodisatravel.com/images/tour/115_vitrin.jpg"),
+                            fit: BoxFit.cover)),
+                    child: Container(
+                      margin: const EdgeInsets.fromLTRB(15, 290, 15, 8),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(30),
+                          color: Colors.white10),
+                      width: 150,
+                      height: 50,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(35),
+                        child: BackdropFilter(
+                            filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
+                            child: OpenContainer(
+                              transitionType: _containerTransitionType,
+                              transitionDuration: const Duration(seconds: 2),
+                              openBuilder: (context, _) =>
+                                  const CappadociaPage(),
+                              closedElevation: 0,
+                              closedShape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(35),
+                                  side: const BorderSide(
+                                    color: Colors.transparent,
+                                  )),
+                              closedColor: Colors.white.withOpacity(0.1),
+                              closedBuilder: (context, _) => Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Container(
+                                    margin:
+                                        const EdgeInsets.fromLTRB(25, 15, 0, 0),
+                                    width: 60,
+                                    height: 20,
+                                    decoration: const BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(30))),
+                                    child: const Text(
+                                      "Italy",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: "mont",
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                        color: Color(0xffFD4416),
+                                      ),
+                                    ),
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      const Padding(
+                                        padding: EdgeInsets.only(left: 15.0),
+                                        child: Text("Pisa",
+                                            style: TextStyle(
+                                                fontSize: 30,
+                                                fontFamily: "mont",
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.bold)),
+                                      ),
+                                      Container(
+                                        margin:
+                                            const EdgeInsets.only(right: 15.0),
+                                        decoration: const BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(80))),
+                                        child: IconButton(
+                                            onPressed: () {},
+                                            icon: const Icon(
+                                                Icons.shopping_cart_rounded)),
+                                      ),
+                                    ],
+                                  ),
+                                  const Padding(
+                                    padding: EdgeInsets.only(left: 20.0),
+                                    child: Text("\$34.00",
                                         style: TextStyle(
                                             fontSize: 15,
                                             fontFamily: "mont",

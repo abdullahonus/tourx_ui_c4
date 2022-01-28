@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tourx_ui_c4/home_page.dart';
+
 import 'package:tourx_ui_c4/main.dart';
 
 class SettingsPage extends StatefulWidget {
